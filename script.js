@@ -1,17 +1,9 @@
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
 var length; 
 var availableCharacters  = []
-// Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
 
-//   passwordText.value = password;
-// }
-
-// Add listener to generate button
 generateBtn.addEventListener("click", startPassword);
+
 
 function startPassword() {
   availableCharacters = []
@@ -20,6 +12,7 @@ function startPassword() {
 }
 
 function passwordLength() {
+
   length = parseInt(prompt("How many characters would you like in your password?"));
 
   if(length >=8 &&  length <=128) {
@@ -31,13 +24,9 @@ function passwordLength() {
   }
 }
 
-// else
-//   alert("No password length inputed. Please input a desired character length for your password");
-
 function lowerCaseLetters() {
 
   var lowerCase = confirm("Would you like to use lowercase letters in your password? Select OK for 'Yes' or Cancel for 'No'");
-
 
   if(lowerCase) {
   availableCharacters = availableCharacters.concat(["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"])
@@ -66,6 +55,7 @@ function passwordNumbers() {
 }
 
 function specialCharacters() {
+  
   var special = confirm("Would you like special characters in your password? Select OK for 'Yes' or Cancel for 'No'");
 
   if(special) {
