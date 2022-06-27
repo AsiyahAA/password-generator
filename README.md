@@ -15,4 +15,4 @@
 ## Link
 ### https://asiyahaa.github.io/password-generator/
 ## Status 
-### Password generator is working correctly and displays random password to user based on user preference.
+### Password generator is working correctly and displays random a password to user based on user preference.
